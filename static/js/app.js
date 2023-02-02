@@ -27,7 +27,7 @@ btn1.addEventListener("click", function() {
 });
 
 btn2.addEventListener("click", function() {
-	if (tg.MainButton.isVisible) {
+	if (tg.MainButton.isVisible && item == "2") {
 		tg.MainButton.hide();
 	}
 	else {
@@ -38,7 +38,7 @@ btn2.addEventListener("click", function() {
 });
 
 btn3.addEventListener("click", function() {
-	if (tg.MainButton.isVisible) {
+	if (tg.MainButton.isVisible && item == "3") {
 		tg.MainButton.hide();
 	}
 	else {
@@ -49,7 +49,7 @@ btn3.addEventListener("click", function() {
 });
 
 btn4.addEventListener("click", function() {
-	if (tg.MainButton.isVisible) {
+	if (tg.MainButton.isVisible && item == "4") {
 		tg.MainButton.hide();
 	}
 	else {
@@ -60,7 +60,7 @@ btn4.addEventListener("click", function() {
 });
 
 btn5.addEventListener("click", function() {
-	if (tg.MainButton.isVisible) {
+	if (tg.MainButton.isVisible && item == "5") {
 		tg.MainButton.hide();
 	}
 	else {
@@ -71,7 +71,7 @@ btn5.addEventListener("click", function() {
 });
 
 btn6.addEventListener("click", function() {
-	if (tg.MainButton.isVisible) {
+	if (tg.MainButton.isVisible && item == "6") {
 		tg.MainButton.hide();
 	}
 	else {
@@ -82,7 +82,7 @@ btn6.addEventListener("click", function() {
 });
 
 btn7.addEventListener("click", function() {
-	if (tg.MainButton.isVisible) {
+	if (tg.MainButton.isVisible && item == "7") {
 		tg.MainButton.hide();
 	}
 	else {
