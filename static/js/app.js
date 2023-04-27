@@ -58,7 +58,7 @@ for (let i = 0; i < btns.length; i++) {
 }
 
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
-	tg.sendData("2");
+	tg.sendData(item);
 });
 
 //btn1.addEventListener("click", function() {
