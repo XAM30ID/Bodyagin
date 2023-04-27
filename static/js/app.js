@@ -51,11 +51,15 @@ for (let i = 0; i < cols.length; i++) {
 
 for (let i = 0; i < btns.length; i++) {
 	btns[i].addEventListener("click", function() {
+		tg.MainButton.show();
 		item = btns[i].id.split("_");
 		tg.MainButton.setText("Вы выбрали цвет: " + Rcols[item[0]] + " и размер: " + item[1]);
-		tg.MainButton.show();
 	});
 }
+
+Telegram.WebApp.onEvent("mainButtonClicked", function(){
+	tg.sendData(item);
+});
 
 //btn1.addEventListener("click", function() {
 //	if (tg.MainButton.isVisible) {
@@ -134,6 +138,4 @@ for (let i = 0; i < btns.length; i++) {
 //	}
 //});
 
-Telegram.WebApp.onEvent("mainButtonClicked", function(){
-	tg.sendData(item);
-});
+
