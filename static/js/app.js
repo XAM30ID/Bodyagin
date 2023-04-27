@@ -58,6 +58,7 @@ for (let i = 0; i < btns.length; i++) {
 }
 
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
+	console.log(item);
 	tg.sendData(item);
 });
 
