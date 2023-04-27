@@ -34,11 +34,14 @@ var btns = []
 
 for (let i = 0; i < cols.length; i++) {
 	for (let j = 0; i < sizes.length; j++) {
-		btns.push(document.getElementById(cols[i] + sizes[j]))
+		let btn = document.getElementById(cols[i] + sizes[j])
+		btns.push(btn)
 	}	
 }
 
 for (let i = 0; i < btns.length; i++) {
+	item = btns[i].id;
+	console.log(item);
 	btns[i].addEventListener("click", function() {
 		if (tg.MainButton.isVisible) {
 			tg.MainButton.hide();
