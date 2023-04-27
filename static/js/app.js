@@ -15,7 +15,7 @@ let item = "";
 //let btn6 = document.getElementById("btn6");
 //let btn7 = document.getElementById("btn7");
 
-const cols = (
+const cols = [
 	"yellow",
 	"green",
 	"red",
@@ -23,35 +23,37 @@ const cols = (
 	"pink",
 	"violet",
 	"black"
-)
+]
 
-const sizes = (
+const Rcols = {
+	"yellow": "Жёлтый",
+	"green": "Зелёный",
+	"red": "Красный",
+	"blue": "Синий",
+	"pink": "Розовый",
+	"violet": "Фиолетовый",
+	"black": "Жёлтый"
+}
+
+const sizes = [
 	"S", "M", "L", "XL", "2XL"
-)
+]
 
 var btns = []
 
 
 for (let i = 0; i < cols.length; i++) {
-	for (let j = 0; i < sizes.length; j++) {
-		let btn = document.getElementById(cols[i] + sizes[j])
+	for (let j = 0; j < sizes.length; j++) {
+		let btn = document.getElementById(cols[i] + "_" + sizes[j]);
 		btns.push(btn)
 	}	
 }
 
 for (let i = 0; i < btns.length; i++) {
-	item = btns[i].id;
-	console.log(item);
 	btns[i].addEventListener("click", function() {
-		if (tg.MainButton.isVisible) {
-			tg.MainButton.hide();
-		}
-		else {
-			item = btns[i].id;
-			tg.MainButton.setText(item);
-			console.log(item);
-			tg.MainButton.show();
-		}
+		item = btns[i].id.split("_");
+		tg.MainButton.setText("Вы выбрали цвет: " + Rcols[item[0]] + " и размер: " + item[1]);
+		tg.MainButton.show();
 	});
 }
 
