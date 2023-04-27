@@ -52,8 +52,8 @@ for (let i = 0; i < cols.length; i++) {
 for (let i = 0; i < btns.length; i++) {
 	btns[i].addEventListener("click", function() {
 		tg.MainButton.show();
-		item = btns[i];
-		tg.MainButton.setText("Вы выбрали цвет: " + Rcols[item.id.split("_")[0]] + " и размер: " + item.id.split("_")[1]);
+		item = btns[i].id;
+		tg.MainButton.setText("Вы выбрали цвет: " + Rcols[item.split("_")[0]] + " и размер: " + item.split("_")[1]);
 	});
 }
 
