@@ -32,7 +32,7 @@ const Rcols = {
 	"blue": "Синий",
 	"pink": "Розовый",
 	"violet": "Фиолетовый",
-	"black": "Жёлтый"
+	"black": "Чёрный"
 }
 
 const sizes = [
@@ -53,13 +53,12 @@ for (let i = 0; i < btns.length; i++) {
 	btns[i].addEventListener("click", function() {
 		tg.MainButton.show();
 		item = btns[i];
-		item2 = btns[i].id.split("_");
-		tg.MainButton.setText("Вы выбрали цвет: " + Rcols[item2[0]] + " и размер: " + item2[1]);
+		tg.MainButton.setText("Вы выбрали цвет: " + Rcols[item.id.split("_")[0]] + " и размер: " + item.id.split("_")[1]);
 	});
 }
 
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
-	tg.sendData(item);
+	tg.sendData("2");
 });
 
 //btn1.addEventListener("click", function() {
