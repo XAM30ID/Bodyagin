@@ -52,13 +52,14 @@ for (let i = 0; i < cols.length; i++) {
 for (let i = 0; i < btns.length; i++) {
 	btns[i].addEventListener("click", function() {
 		tg.MainButton.show();
-		item = btns[i].id.split("_");
-		tg.MainButton.setText("Вы выбрали цвет: " + Rcols[item[0]] + " и размер: " + item[1]);
+		item = btns[i];
+		item2 = btns[i].id.split("_");
+		tg.MainButton.setText("Вы выбрали цвет: " + Rcols[item2[0]] + " и размер: " + item2[1]);
 	});
 }
 
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
-	tg.sendData("2");
+	tg.sendData(item);
 });
 
 //btn1.addEventListener("click", function() {
