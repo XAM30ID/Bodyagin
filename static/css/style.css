@@ -21,13 +21,13 @@ body {
 	padding: 0;
 	font-size: 20px;
 	color: black;
-	background-color: rgba(240, 240, 240, 1);
+	background-color: rgba(230, 230, 230, 1);
 	font-family: 'Bitter';
 }
 
 .logoImg {
-	height: 64px;
 	float: left;
+	border-radius: 50px;
 }
 
 .container {
