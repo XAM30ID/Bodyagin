@@ -27,6 +27,7 @@ body {
 
 .logoImg {
 	height: 64px;
+	float: left;
 }
 
 .container {
