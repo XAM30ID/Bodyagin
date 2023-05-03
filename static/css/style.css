@@ -25,6 +25,9 @@ body {
 	font-family: 'Bitter';
 }
 
+.logoImg {
+	height: 64px;
+}
 
 .container {
 	width: 100vw;
