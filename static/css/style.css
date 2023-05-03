@@ -92,6 +92,7 @@ body {
 .goodCol {
 	color: rgba(130, 130, 130, 1);
 	margin-bottom: 3px;
+	font-size: 18px;
 }
 
 .goodCost {
