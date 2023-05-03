@@ -26,6 +26,7 @@ body {
 }
 
 .logoImg {
+	height: 64px;
 	float: left;
 	border-radius: 50px;
 }
