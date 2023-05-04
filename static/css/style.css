@@ -56,8 +56,9 @@ body {
 .inner {
 	display: inline-flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: space-evenly;
 }
+
 
 .img {
 	width: 120px;
@@ -86,17 +87,17 @@ body {
 }
 
 .goodTitle {
-	font-size: 24px;
+	font-size: 16px;
 }
 
 .goodCol {
 	color: rgba(130, 130, 130, 1);
 	margin-bottom: 3px;
-	font-size: 18px;
+	font-size: 14px;
 }
 
 .goodCost {
-	font-size: 20px;
+	font-size: 14px;
 	margin-bottom: 3px;
 }
 
